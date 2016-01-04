@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/up_home_page"
+    android:orientation="vertical"
+    tools:context="com.ahezarkhani.armanh.up.displayRunSummary">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+
+
+
+
+
+
+
+<!--
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight = "1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_display"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_display"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miles"
+                android:id="@+id/MilesRanMarker"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:onClick="openMap"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:src="@drawable/upicon_without_background"
+                android:onClick="goHome"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="HomeButton" />
+        </LinearLayout>
+
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/miles_view"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:typeface="sans"
+            android:textSize="45dp"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Velocity"
+                android:layout_weight = "1"
+                android:id="@+id/velocity_key"
+                android:textColor="#6EF062"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altitude"
+                android:layout_weight = "1"
+                android:id="@+id/altitude_key"
+                android:textColor="#FF4545"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:layout_weight = "1"
+                android:id="@+id/distance_key"
+                android:textColor="#85dcff"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form Issue"
+                android:layout_weight = "1"
+                android:id="@+id/form_issue"
+                android:textColor="#f7ba2a"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <com.ahezarkhani.armanh.up.GraphView
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight = ".8"
+                android:id="@+id/map_button"
+                android:src = "@drawable/map_icon"
+                android:onClick="openMap"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight = "2"
+                android:src = "@drawable/tips_icon"
+                android:onClick = "giveTips"
+                android:id="@+id/tips_button" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight = "2"
+                android:src = "@drawable/icon_home"
+                android:id="@+id/home_button"
+                android:onClick="goHome"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

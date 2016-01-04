@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UP</string>
+    <string name="title_activity_up">UP</string>
+    <string name="StartButtonText">S t a r t</string>
+    <string name="AppName">UP</string>
+    <string name="EndRun">End Run</string>
+    <string name="Miles">Miles</string>
+    <string name="pause_button">Pause Run</string>
+    <string name="finish_button">Finish Run</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
